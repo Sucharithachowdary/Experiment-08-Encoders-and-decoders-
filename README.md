@@ -101,8 +101,7 @@ endmodule
 
 ### TRUTH TABLE 
 
-
-![Uploading g3.png…]()
+<img width="464" alt="g3" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/be3e737b-3085-4790-80fb-360171feb424">
 
 
 ### DECODER:
@@ -120,8 +119,9 @@ assign d6 = (a&b&~c);
 assign d7 = (a&b&c);
 ~~~
 ### RTL LOGIC
+<img width="416" alt="g4" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/60dfddd5-a683-4acb-959b-998431c25eca">
 
-![Uploading g4.png…]()
+
 
 ### TIMING DIGRAMS  
 
