@@ -62,10 +62,21 @@ D7 = X Y Z
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: sucharitha 
+RegisterNumber:  212221240021
 */
+### ENCODER:
+~~~
 
+module EX7(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
+
+~~~
 
 
 
@@ -73,6 +84,7 @@ RegisterNumber:
 
 ### RTL LOGIC  
 
+<img width="413" alt="g1" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/3d62a287-e6c5-42b0-9784-5d5c8a960e11">
 
 
 
@@ -84,13 +96,46 @@ RegisterNumber:
 
 
 
+<img width="272" alt="g2" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/93ab57ce-815e-4fd1-91a4-9caad55a60ac">
 
 
 ### TRUTH TABLE 
 
 
+![Uploading g3.png…]()
 
+
+### DECODER:
+~~~
+module EX7(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+~~~
+### RTL LOGIC
+
+![Uploading g4.png…]()
+
+### TIMING DIGRAMS  
+
+
+<img width="415" alt="g5" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/78f09cb8-9f6e-46a8-976d-5c8e62c1dc59">
+
+
+
+
+### TRUTH TABLE 
+
+<img width="416" alt="g6" src="https://github.com/Sucharithachowdary/Experiment-08-Encoders-and-decoders-/assets/94166007/137b7572-d276-4f64-a83d-b9b49173e51b">
 
 
 
 ### RESULTS 
+Thus the program to desing encoder and decoder is completed.
